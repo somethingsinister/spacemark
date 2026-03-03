@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Brian — Security Enthusiast & Software Engineer</title>
+    <meta name="description"
+        content="Mark Brian is a full-stack software developer based in Accra, Ghana, building secure, scalable web systems with business precision. Transitioning into Software Security Engineering." />
+    <meta name="keywords"
+        content="Mark Brian, Software Engineer, Security Engineer, Full Stack Developer, Python, React, Django, Accra Ghana" />
+    <meta name="author" content="Mark Brian" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mark Brian — Software Engineer" />
+    <meta property="og:description" content="Building secure, scalable web systems with business precision." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://markbrian.dev" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span> mark<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#security" class="nav-link" data-section="security">Security</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities · Accra, Ghana
+                </div>
+
+                <h1 class="hero-title">
+                    Building <span class="title-accent">Secure</span>,<br />
+                    Scalable Web Systems<br />
+                    <span class="title-outline">with Business Precision.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Full-stack developer combining <strong>engineering depth</strong> and <strong>business
+                        analysis</strong> to deliver production-ready solutions on a trajectory toward <span
+                        class="accent-text">Software Security Engineering</span>.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-terminal"></i> View Projects
+                    </a>
+
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Languages & Frameworks</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Full-Stack</span>
+                        <span class="stat-label">Frontend to Backend</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Security</span>
+                        <span class="stat-label">TryHackMe Certified</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="float-card fc-1" data-delay="0">
+                        <i class="fab fa-python"></i> Python
+                    </div>
+                    <div class="float-card fc-2" data-delay="0.3">
+                        <i class="fab fa-react"></i> React
+                    </div>
+                    <div class="float-card fc-3" data-delay="0.6">
+                        <i class="fab fa-node-js"></i> Node.js
+                    </div>
+                    <div class="float-card fc-4" data-delay="0.9">
+                        <i class="fas fa-shield-halved"></i> Security
+                    </div>
+                    <div class="float-card fc-5" data-delay="1.2">
+                        <i class="fab fa-docker"></i> Docker
+                    </div>
+                    <div class="float-card fc-6" data-delay="1.5">
+                        <i class="fas fa-database"></i> Django
+                    </div>
+                </div>
+
+                <div class="hero-code-block">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                        <span class="code-filename">mark.py</span>
+                    </div>
+                    <div class="code-body">
+                        <div class="code-line"><span class="code-keyword">class</span> <span
+                                class="code-class">Engineer</span>:</div>
+                        <div class="code-line"> <span class="code-keyword">def</span> <span
+                                class="code-fn">__init__</span>(self):</div>
+                        <div class="code-line"> self.name = <span class="code-str">"Mark Brian"</span></div>
+                        <div class="code-line"> self.location = <span class="code-str">"Accra, Ghana"</span></div>
+                        <div class="code-line"> self.focus = [<span class="code-str">"Security"</span>,</div>
+                        <div class="code-line"> <span class="code-str">"Fullstack"</span>,</div>
+                        <div class="code-line"> <span class="code-str">"Business"</span>]</div>
+                        <div class="code-line"> self.ready = <span class="code-bool">True</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-tag">
+                <span class="tag-line"></span>
+                <span>01 · About</span>
+                <span class="tag-line"></span>
+            </div>
+            <h2 class="section-title">The Engineer Behind the Code</h2>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-para">
+                        I'm a <strong>full-stack software developer</strong> with hands-on experience across Python,
+                        JavaScript, React, Node.js, and Django. I build systems that don't just work, they're
+                        architected for performance, maintainability, and scale from day one.
+                    </p>
+                    <p class="about-para">
+                        My edge is combining engineering with <strong>business analysis</strong>. I approach every
+                        project with requirements gathering, process modelling, and a structured understanding of the
+                        problem before a single line of code is written. This means fewer rewrites and higher-impact
+                        software.
+                    </p>
+                    <p class="about-para">
+                        I'm actively building toward becoming a <strong>Software Security Engineer</strong>. Through
+                        TryHackMe's Advent of Cyber 2025, I've developed real hands-on exposure to attack and defense
+                        scenarios, giving me the security mindset that modern engineering teams need baked in from the
+                        start.
+                    </p>
+
+                    <div class="work-method">
+                        <h3 class="method-title">
+                            <i class="fas fa-code-branch"></i> My Workflow
+                        </h3>
+                        <div class="method-grid">
+                            <div class="method-item">
+                                <i class="fas fa-file-lines"></i>
+                                <span>Requirement-driven development</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Clean architecture mindset</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fas fa-shield-halved"></i>
+                                <span>Secure-by-design thinking</span>
+                            </div>
+                            <div class="method-item">
+                                <i class="fas fa-arrows-rotate"></i>
+                                <span>Continuous improvement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-sidebar">
+                    <div class="profile-card glass-card">
+                        <div class="profile-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-initials">MB</div>
+                            <div class="avatar-status"></div>
+                        </div>
+                        <h3 class="profile-name">Mark Brian</h3>
+                        <p class="profile-role">Software Engineer</p>
+                        <p class="profile-note">→ Security Engineer</p>
+                        <div class="profile-details">
+                            <div class="detail-row">
+                                <i class="fas fa-location-dot"></i>
+                                <span>Accra, Ghana</span>
+                            </div>
+                            <div class="detail-row">
+                                <i class="fas fa-envelope"></i>
+                                <span>bmark4901@gmail.com</span>
+                            </div>
+                            <div class="detail-row">
+                                <i class="fas fa-phone"></i>
+                                <span>0534953992</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-facts glass-card">
+                        <div class="fact-item">
+                            <span class="fact-label">Stack</span>
+                            <span class="fact-value">Full-Stack</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Focus</span>
+                            <span class="fact-value">Software Security Engineering</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Status</span>
+                            <span class="fact-value open">Open to Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <div class="section-tag">
+                <span class="tag-line"></span>
+                <span>02 · Skills</span>
+                <span class="tag-line"></span>
+            </div>
+            <h2 class="section-title">Technical Capabilities</h2>
+            <p class="section-subtitle">A structured overview of my engineering toolkit — from languages to business
+                systems.</p>
+
+            <div class="skills-grid">
+
+                <div class="skill-category glass-card" data-cat="languages">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card" data-cat="frontend">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fas fa-desktop"></i></div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><i class="fab fa-react"></i> React</div>
+                        <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card" data-cat="backend">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><i class="fab fa-node-js"></i> Node.js</div>
+                        <div class="skill-tag"><i class="fas fa-leaf"></i> Django</div>
+                        <div class="skill-tag"><i class="fas fa-plug"></i> REST APIs</div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card" data-cat="databases">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><i class="fas fa-elephant"></i> PostgreSQL</div>
+                        <div class="skill-tag"><i class="fas fa-dolphin"></i> MySQL</div>
+                        <div class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card" data-cat="devops">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fas fa-gear"></i></div>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-tag"><i class="fab fa-github"></i> GitHub</div>
+                        <div class="skill-tag"><i class="fab fa-docker"></i> Docker</div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card" data-cat="business">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Business & Analytical</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><i class="fas fa-clipboard-list"></i> Requirements Gathering</div>
+                        <div class="skill-tag"><i class="fas fa-diagram-project"></i> Process Modelling</div>
+                        <div class="skill-tag"><i class="fas fa-chart-bar"></i> Data Analysis</div>
+                        <div class="skill-tag"><i class="fas fa-users-gear"></i> Project Management</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="section-tag">
+                <span class="tag-line"></span>
+                <span>03 · Projects</span>
+                <span class="tag-line"></span>
+            </div>
+            <h2 class="section-title">Engineering Work</h2>
+            <p class="section-subtitle">Production-minded projects demonstrating full-stack depth and structured
+                thinking.</p>
+
+            <div class="projects-grid">
+
+                <div class="project-card glass-card">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Live" class="project-link"><i
+                                    class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">SecureAuth System</h3>
+                    <p class="project-desc">A complete authentication application developed in Django and React,
+                        comprising of role-based access control, brute-force protection and JWT tokens with
+                        security-first by design.</p>
+                    <div class="project-stack">
+                        <span>Django</span><span>React</span><span>PostgreSQL</span><span>JWT</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card featured">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Live" class="project-link"><i
+                                    class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Business Analytics Dashboard</h3>
+                    <p class="project-desc">Data-driven dashboard combining Python data processing with a React
+                        frontend. Demonstrates requirement-driven development from stakeholder interviews to deployment.
+                    </p>
+                    <div class="project-stack">
+                        <span>Python</span><span>React</span><span>Node.js</span><span>MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-boxes-stacked"></i></div>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Live" class="project-link"><i
+                                    class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Containerized API Service</h3>
+                    <p class="project-desc">REST API built with Node.js, containerized with Docker, and managed via
+                        GitHub Actions CI/CD. Clean separation of concerns with documented endpoints.</p>
+                    <div class="project-stack">
+                        <span>Node.js</span><span>Docker</span><span>MySQL</span><span>GitHub Actions</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECURITY SECTION ===== -->
+    <section class="security" id="security">
+        <div class="section-container">
+            <div class="section-tag">
+                <span class="tag-line"></span>
+                <span>04 · Security</span>
+                <span class="tag-line"></span>
+            </div>
+            <h2 class="section-title">Security Engineering Path</h2>
+            <p class="section-subtitle">Not decorative. Hands-on exposure to real attack and defense scenarios.</p>
+
+            <div class="security-layout">
+                <div class="cert-card glass-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <div class="cert-badge">Certificate of Completion</div>
+                    </div>
+                    <div class="cert-body">
+                        <div class="cert-platform">TryHackMe</div>
+                        <h3 class="cert-name">Advent of Cyber 2025</h3>
+                        <p class="cert-desc">
+                            A rigorous 24-day cybersecurity challenge covering hands-on attack and defense scenarios
+                            including web vulnerability exploitation, network analysis, cryptography fundamentals,
+                            OSINT, digital forensics, and incident response workflows.
+                        </p>
+                        <div class="cert-skills">
+                            <span class="cert-skill"><i class="fas fa-circle-dot"></i> Web Exploitation</span>
+                            <span class="cert-skill"><i class="fas fa-circle-dot"></i> Network Analysis</span>
+                            <span class="cert-skill"><i class="fas fa-circle-dot"></i> Digital Forensics</span>
+                            <span class="cert-skill"><i class="fas fa-circle-dot"></i> Incident Response</span>
+                            <span class="cert-skill"><i class="fas fa-circle-dot"></i> OSINT</span>
+                            <span class="cert-skill"><i class="fas fa-circle-dot"></i> Cryptography</span>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="cert-year"><i class="fas fa-calendar"></i> 2025</span>
+                        <a href="#" class="cert-verify">Verify Certificate <i
+                                class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="security-narrative">
+                    <div class="narrative-block glass-card">
+                        <div class="narrative-icon"><i class="fas fa-crosshairs"></i></div>
+                        <h4>Why Security?</h4>
+                        <p>Software without security is infrastructure without a lock. Every system I build, I create
+                            with the attacker's perspective in mind — validating inputs, minimizing attack surface, and
+                            enforcing least privilege.</p>
+                    </div>
+                    <div class="narrative-block glass-card">
+                        <div class="narrative-icon"><i class="fas fa-route"></i></div>
+                        <h4>The Trajectory</h4>
+                        <p>My path combines full-stack engineering depth with active security study. I'm building toward
+                            roles at the intersection of software development and security — application security,
+                            DevSecOps, or secure backend engineering.</p>
+                    </div>
+                    <div class="narrative-block glass-card">
+                        <div class="narrative-icon"><i class="fas fa-terminal"></i></div>
+                        <h4>Current Study</h4>
+                        <p>Active on TryHackMe. Studying OWASP Top 10, secure coding patterns, and network fundamentals.
+                            Building a track record of security-aware engineering decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="section-tag">
+                <span class="tag-line"></span>
+                <span>05 · Contact</span>
+                <span class="tag-line"></span>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <h2 class="contact-heading">Let's build secure<br /><span class="title-accent">systems that
+                            scale.</span></h2>
+                    <p class="contact-sub">Whether you're building a product team, looking for a developer who thinks in
+                        systems, or simply want to talk engineering — I am available and ready.</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:bmark4901@gmail.com" class="contact-link">
+                            <div class="clink-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="clink-text">
+                                <span class="clink-label">Email</span>
+                                <span class="clink-value">bmark4901@gmail.com</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:0534953992" class="contact-link">
+                            <div class="clink-icon"><i class="fas fa-phone"></i></div>
+                            <div class="clink-text">
+                                <span class="clink-label">Phone</span>
+                                <span class="clink-value">0534953992</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
+                            <div class="clink-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="clink-text">
+                                <span class="clink-label">LinkedIn</span>
+                                <span class="clink-value">Connect on LinkedIn</span>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="contact-link no-link">
+                            <div class="clink-icon"><i class="fas fa-location-dot"></i></div>
+                            <div class="clink-text">
+                                <span class="clink-label">Location</span>
+                                <span class="clink-value">Accra, Ghana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form class="contact-form glass-card" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                placeholder="Job opportunity / Project inquiry" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-bracket">&lt;</span> mark<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Building secure, scalable software from Accra.</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#security">Security</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:bmark4901@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://tryhackme.com" target="_blank" rel="noopener" aria-label="TryHackMe"><i
+                            class="fas fa-shield-halved"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Mark Brian. Engineered with precision.</p>
+                <p class="footer-meta"><span class="badge-dot small"></span> Open to opportunities</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
